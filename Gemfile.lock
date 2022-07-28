@@ -81,7 +81,7 @@ GEM
     minitest (5.16.2)
     msgpack (1.5.4)
     nio4r (2.5.8)
-    nokogiri (1.13.8-x86_64-darwin)
+    nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
     pg (1.4.1)
     pry (0.14.1)
@@ -160,7 +160,7 @@ GEM
     websocket-extensions (0.1.5)
 
 PLATFORMS
-  x86_64-darwin-21
+  arm64-darwin-20
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
