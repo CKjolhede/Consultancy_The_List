@@ -1,3 +1,12 @@
+User.destroy_all
+Recommendation.destroy_all
+
+1.times do
+  FactoryBot.create_list(:user, 20)
+  @user = User.all.sample
+  FactoryBot.create_list(:recommendation, 6)
+end
+
 User.create!(email: "alaine.nader@hammes.co", name: "Devon Keeling")
 User.create!(email: "rafael_leffler@gislason.biz", name: "Santiago Conn")
 User.create!(email: "jewel.schmeler@aufderhar.info", name: "Ms. Garnet Borer")
