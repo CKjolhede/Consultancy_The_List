@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    email { Faker::Internet.unique.email }
-    name { Faker::Name.name }
+    name {Faker::Movies::PrincessBride.character}
+    sequence(:email) { |n| "#{name.gsub(" ","")}_#{n}@thelist.com".downcase }
   end
 end
