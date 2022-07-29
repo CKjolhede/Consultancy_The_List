@@ -24,6 +24,9 @@ describe "Users API endpoint" do
 
       expect(user[:attributes]).to have_key(:email)
       expect(user[:attributes][:email]).to be_a(String)
+
+      expect(user[:attributes]).to have_key(:id)
+      expect(user[:attributes][:id]).to be_a(Integer)
     end
   end
 
