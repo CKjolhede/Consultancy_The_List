@@ -73,4 +73,18 @@ RSpec.describe Recommendation, type: :request do
       expect(recom.status).to eq("accepted")
     end
   end
+
+  context "#Destroy" do
+    it 'deletes a recommendation object' do
+      user = User.last
+      create(:recommendation, user_id: user.id)
+      recom = Recommendation.last
+      expect(recom).to be_a Recommendation
+
+      delete "/api/v1/users/#{user.id}/recommendations/#{recom.id}"
+
+      expect(response).to be_successful
+      expect{Recommendation.find(recom.id)}.to raise_error(ActiveRecord::RecordNotFound)
+    end
+  end
 end
