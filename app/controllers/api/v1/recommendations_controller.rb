@@ -9,6 +9,10 @@ def create
   render json: Recommendation.create(recommendation_params)
 end
 
+def update
+  render json: Recommendation.update(params[:id], recommendation_params)
+end
+
 private
 
   def recommendation_params
