@@ -4,7 +4,7 @@ class CreateRecommendations < ActiveRecord::Migration[5.2]
       t.integer :media_id
       t.string :title
       t.integer :media_type, default: 0
-      t.integer :recommended_by
+      t.integer :recommended_by_id 
       t.integer :status, default: 0
       t.references :user, foreign_key: true
 

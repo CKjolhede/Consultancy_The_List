@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2022_07_28_040222) do
     t.integer "media_id"
     t.string "title"
     t.integer "media_type", default: 0
-    t.integer "recommended_by"
+    t.integer "recommended_by_id"
     t.integer "status", default: 0
     t.bigint "user_id"
     t.datetime "created_at", null: false

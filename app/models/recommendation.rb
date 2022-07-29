@@ -5,7 +5,7 @@ class Recommendation < ApplicationRecord
   validates_presence_of :media_id 
   validates_presence_of :media_type
   validates_presence_of :user_id
-  validates_presence_of :recommended_by
+  validates_presence_of :recommended_by_id
   
   enum status: {pending: 0, accepted: 1}
   enum media_type: {movie: 0, book: 1}
