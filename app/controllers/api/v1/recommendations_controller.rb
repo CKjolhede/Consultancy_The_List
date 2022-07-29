@@ -1,7 +1,6 @@
-class Api::V1::RecommendationsController < ApplicationsController
+class Api::V1::RecommendationsController < ApplicationController
 
   def index
-    render json: RecommendationSerializer
-
+    # render json: RecommendationSerializer
   end
 end
