@@ -5,6 +5,9 @@ def index
       render json: RecommendationSerializer.new(@user.recommendations)
 end
 
+def create
+  render json: Recommendation.create(recommendation_params)
+end
 
 private
 
