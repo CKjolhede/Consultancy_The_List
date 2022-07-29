@@ -1,10 +1,9 @@
 class Api::V1::RecommendationsController < ApplicationController
-before_action :find_both_users, only: [:index, :create, :update, :destroy]
-  def index
-    # render json: RecommendationSerializer
-  end
+before_action :find_user, only: [:index, :create, :update, :destroy]
 
-
+def index 
+      render json: RecommendationSerializer.new(@user.recommendations)
+end
 
 
 private
@@ -13,9 +12,8 @@ private
     params.permit(:user_id, :recommended_by_id, :title, :media_id, :media_type, :status)
   end
 
-  def find_both_users
-      @recommended_to = User.find(params[:user_id])
-      @recommended_by = User.find(params[:recommended_by_id])
+  def find_user
+    @user = User.find(params[:user_id])
   end
 
 
