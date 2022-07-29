@@ -13,6 +13,10 @@ def update
   render json: Recommendation.update(params[:id], recommendation_params)
 end
 
+def destroy
+  render json: Recommendation.destroy(params[:id])
+end
+
 private
 
   def recommendation_params
