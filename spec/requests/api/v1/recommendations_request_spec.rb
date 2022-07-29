@@ -59,4 +59,18 @@ RSpec.describe Recommendation, type: :request do
       expect(new_rec.user_id).to eq(user.id)
     end
   end
+
+  context "#Update" do
+    it 'updates the recommendation status to accepted' do
+      user = User.all.last
+      recom_id = user.recommendations.last.id
+      recomm_params = {status: "accepted"}
+    patch "/api/v1/users/#{user.id}/recommendations/#{recom_id}", params: recomm_params
+
+      expect(response).to be_successful
+      recom = Recommendation.find(recom_id)
+      expect(recom.status).to_not eq("pending")
+      expect(recom.status).to eq("accepted")
+    end
+  end
 end
