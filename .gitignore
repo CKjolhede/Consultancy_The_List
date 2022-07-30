@@ -23,4 +23,8 @@
 /config/master.key
 
 .DS_Store
+app/library/movie_quotes.rb
+lib/movie_quotes.rb
+app/views/samples
+
 
