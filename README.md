@@ -12,7 +12,7 @@
 ### <br>
 # Error Codes
 
-*   Traditional HTTP Response Codes can be expected
+*Traditional HTTP Response Codes can be expected*
 *   Successful Responses will be represented using 2xx codes
 *   Data errors will be represented with 4xx codes
 *   Server errors will be represented through 5xx codes
@@ -27,11 +27,11 @@ The only thing limiting your rates is our bandwidth.
 # End Points
 
 
- ### User Index (List of all users)
+ ## User Index (List of all users)
 *GET*   http://localhost:3000/api/v1/users
 ###### <br> 
 
- ### User Create (New User Creation)
+ ## User Create (New User Creation)
 *POST* http://localhost:3000/api/v1/users
 ###### <br> 
  ## User Dashboard (Single User's Homepage)
@@ -53,5 +53,5 @@ The only thing limiting your rates is our bandwidth.
  ## Recommendations Destroy Endpoint (Recommendation rejected)
 *DEL* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
 
-<i>:id refers to the user's id</i>
+<i>:id refers to the recommendation's id</i>
 ###### <br> 
