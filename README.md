@@ -45,12 +45,12 @@ The only thing limiting your rates is our bandwidth.
  ## Recommendations Create Endpoint (Creates a recommendation)
 *POST* http://localhost:3000/api/v1/users/:user_id/recommendations
 ###### <br> 
- ## Recommendations Update Endpoint (Changes Status to Accepted)
+ ## Recommendations Update (Changes Status to Accepted)
 *PATCH* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
 
 <i>:id refers to the recommendation's id</i>
 ###### <br> 
- ## Recommendations Destroy Endpoint (Recommendation rejected)
+ ## Recommendations Destroy (Recommendation rejected)
 *DEL* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
 
 <i>:id refers to the recommendation's id</i>
