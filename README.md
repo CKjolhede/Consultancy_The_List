@@ -12,7 +12,7 @@
 ### <br>
 # Error Codes
 
-*   Traditional HTTP Response Codes can be expected
+*Traditional HTTP Response Codes can be expected*
 *   Successful Responses will be represented using 2xx codes
 *   Data errors will be represented with 4xx codes
 *   Server errors will be represented through 5xx codes
