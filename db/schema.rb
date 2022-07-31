@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_27_170703) do
+ActiveRecord::Schema.define(version: 2022_07_28_040222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "recommendations", force: :cascade do |t|
     t.integer "media_id"
-    t.string "media_title"
-    t.integer "media_type"
-    t.bigint "referred_by_id"
-    t.bigint "referred_to_id"
+    t.string "title"
+    t.integer "media_type", default: 0
+    t.integer "recommended_by_id"
+    t.integer "status", default: 0
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["referred_by_id"], name: "index_recommendations_on_referred_by_id"
-    t.index ["referred_to_id"], name: "index_recommendations_on_referred_to_id"
+    t.index ["user_id"], name: "index_recommendations_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -34,6 +34,5 @@ ActiveRecord::Schema.define(version: 2022_07_27_170703) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "recommendations", "users", column: "referred_by_id"
-  add_foreign_key "recommendations", "users", column: "referred_to_id"
+  add_foreign_key "recommendations", "users"
 end
