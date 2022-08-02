@@ -1,12 +1,17 @@
 class Api::V1::RecommendationsController < ApplicationController
 before_action :find_user, only: [:index, :create, :update, :destroy]
 
-def index 
+def index
       render json: RecommendationSerializer.new(@user.recommendations)
 end
 
 def create
-  render json: Recommendation.create(recommendation_params)
+  @recommendation = Recommendation.new(recommendation_params)
+  if @recommendation.save
+    render json: RecommendationSerializer.new(@recommendation)
+  else
+    render status: 400
+  end
 end
 
 def update
@@ -30,4 +35,3 @@ private
 
 
 end
-
