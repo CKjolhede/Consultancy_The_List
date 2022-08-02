@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_28_040222) do
+ActiveRecord::Schema.define(version: 2022_08_02_005445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "recommendations", force: :cascade do |t|
-    t.integer "media_id"
+    t.string "media_id"
     t.string "title"
     t.integer "media_type", default: 0
     t.integer "recommended_by_id"
