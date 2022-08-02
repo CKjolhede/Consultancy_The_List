@@ -10,7 +10,7 @@ RSpec.describe Recommendation, type: :request do
   end
   context '#Index' do
     it "sends a list of recommendations for a single user" do
-      
+
       get "/api/v1/users/#{@recommended_to.id}/recommendations"
 
       expect(response).to be_successful
@@ -24,7 +24,7 @@ RSpec.describe Recommendation, type: :request do
         expect(rec[:attributes]).to have_key :title
         expect(rec[:attributes][:title]).to be_a String
         expect(rec[:attributes]).to have_key(:media_id)
-        expect(rec[:attributes][:media_id]).to be_an Integer
+        expect(rec[:attributes][:media_id]).to be_an String
         expect(rec[:attributes]).to have_key(:status)
         expect(rec[:attributes][:status]).to be_a String
         expect(rec[:attributes]).to have_key(:recommended_by_id)
@@ -39,7 +39,7 @@ RSpec.describe Recommendation, type: :request do
     it 'creates a new recommendation object' do
       user = User.all.last
       recommendation_params = ({
-                                media_id: 2221,
+                                media_id: "2221",
                                 title: "La La Land",
                                 media_type: "movie",
                                 recommended_by_id: 18,
@@ -50,9 +50,9 @@ RSpec.describe Recommendation, type: :request do
 
       post "/api/v1/users/#{user.id}/recommendations", params: recommendation_params
       expect(response).to be_successful
-      
+
       new_rec = Recommendation.last
-      expect(new_rec.media_id).to eq(2221)
+      expect(new_rec.media_id).to eq("2221")
       expect(new_rec.title).to eq("La La Land")
       expect(new_rec.media_type).to eq("movie")
       expect(new_rec.status).to eq("pending")
