@@ -31,6 +31,10 @@ RSpec.describe Recommendation, type: :request do
         expect(rec[:attributes][:recommended_by_id]).to be_an Integer
         expect(rec[:attributes]).to have_key(:media_type)
         expect(rec[:attributes][:media_type]).to be_an String
+        expect(rec[:attributes]).to have_key(:recommended_by_info)
+        expect(rec[:attributes][:recommended_by_info]).to be_an Hash
+        expect(rec[:attributes][:recommended_by_info]).to have_key(:name)
+        expect(rec[:attributes][:recommended_by_info][:name]).to be_an String
       end
     end
   end
@@ -42,7 +46,7 @@ RSpec.describe Recommendation, type: :request do
                                 media_id: "2221",
                                 title: "La La Land",
                                 media_type: "movie",
-                                recommended_by_id: 18,
+                                recommended_by_id: User.first.id,
                                 status: "pending",
                                 user_id: user.id
                               })
