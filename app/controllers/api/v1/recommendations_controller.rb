@@ -15,7 +15,9 @@ def create
 end
 
 def update
-  render json: Recommendation.update(params[:id], recommendation_params)
+  rec = Recommendation.find(params[:id])
+  rec.update(recommendation_params)
+  render json: rec
 end
 
 def destroy
