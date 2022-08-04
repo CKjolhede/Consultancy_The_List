@@ -4,21 +4,31 @@
 The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 
 ## Table of Contents
-- [Overview](##overview)
-- [Versions](##versions)
-- [Schema](##schema)
-- [Setup](##setup)
-- [Endpoints](##endpoints)
-- [Technologies](##technologies)
-- [Contributors](##contributors)
+1. [ Overview. ](#overview)
+2. [ Versions ](#versions)
+3. [ Schema ](#schema)
+4. [ Setup. ](#setup)
+5. [ Endpoints ](#endpoints)
+6. [ Technologies ](#technologies)
+7. [ Contributors ](#contributors)
 
-## Overview
+<a name="overview"></a>
+## 1. Overview
+
 **TheLIst BE** in conjunction with **TheList FE** is the product of a team of software development students. From its inception to its living production deployment, all aspects of this product can be directly traced back to a team member. This product is wholly original and comprehensively demonstrates the creativity and capability of each member of the team. This is a product we are exceptionally proud of and now offer you the opportunity to explore **TheList.**
 
-## Schema
+<a name="versions"></a>
+## 2. Versions
+- Ruby 2.7.4
+- Rails 5.2.6
+
+<a name="schema"></a>
+## 3. Schema
 <img width="516" alt="Screen Shot 2022-08-04 at 11 35 03 AM" src="https://user-images.githubusercontent.com/92293363/182930333-bd756d4d-77c9-4fc9-aa56-8d3978f8fb5e.png">
 
-## Setup
+<a name="setup"></a>
+## 4. Setup
+
 1. Fork and Clone the repo: [Github - Consultancy-The-List-BE](https://github.com/CKjolhede/Consultancy_The_List_BE/edit/main/README.md)
 2. Install gem packages: `bundle install`
 3. Setup the database: `rails db:{drop,create,migrate,seed}`
@@ -26,7 +36,8 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 <br>
 **Google OAuth** is required to access and interact with **TheList**. Access to **TheListAPI** is restricted to only **TheList** and its users so authentication is implicit through access and authorization is managed by **TheList**
 
-## End Points
+<a name="endpoints"></a>
+## 5. Endpoints
 + base `/api/v1`
 
  ### User Index (List of all users)
@@ -63,7 +74,8 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 <i>:id refers to the recommendation's id</i>
 <br>
 
-## Technologies
+<a name="technologies"></a>
+## 6. Technologies
 <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white" />
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
 <img src="https://img.shields.io/badge/Atom-66595C?style=for-the-badge&logo=Atom&logoColor=white" />
@@ -75,8 +87,10 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/>
 <img src="https://user-images.githubusercontent.com/64919819/113648167-6965f280-9649-11eb-8794-0f1082ae8d1c.png" />
 <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+<a name="contributors"></a>
 
-## Contributors
+<a name="contributors"></a>
+## 7. Contributors
 ### Back-end Team
 Eric Espindola Chavez &mdash; [Github](https://github.com/erock02) • [LinkedIn](https://www.linkedin.com/in/eric-espindola-b9620a158/)
 Chris Kjolhede &mdash; [Github](https://github.com/CKjolhede) • [LinkedIn](https://www.linkedin.com/in/chris-kjolhede/)
