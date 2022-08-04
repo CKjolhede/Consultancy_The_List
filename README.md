@@ -66,3 +66,17 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/>
 <img src="https://user-images.githubusercontent.com/64919819/113648167-6965f280-9649-11eb-8794-0f1082ae8d1c.png" />
 <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+
+## Contributors
+### Back-end Team
+Eric Espindola Chavez &mdash; [Github](https://github.com/erock02) • [LinkedIn](https://www.linkedin.com/in/eric-espindola-b9620a158/)
+Chris Kjolhede &mdash; [Github](https://github.com/CKjolhede) • [LinkedIn](https://www.linkedin.com/in/chris-kjolhede/)
+Becky Nisttahuz &mdash; [Github](https://github.com/benistta) • [LinkedIn](https://www.linkedin.com/in/becky-nisttahuz/)
+
+### Front-end Team
+Deannah Burke &mdash; [Github](https://github.com/deannahburke) • [LinkedIn](https://www.linkedin.com/in/deannah-burke/)
+Wesley Garcia &mdash; [Github](https://github.com/wesatt) • [LinkedIn](https://www.linkedin.com/in/wesley-garcia-attech/)
+Sai Hall &mdash; [Github](https://github.com/SaiHall) • [LinkedIn](https://www.linkedin.com/in/sai-hall-503710237/)
+
+### Project Manager-Lead Teacher
+Jamison Ordway
