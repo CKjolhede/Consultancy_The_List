@@ -16,6 +16,7 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 **TheLIst BE** in conjunction with **TheList FE** is the product of a team of software development students. From its inception to its living production deployment, all aspects of this product can be directly traced back to a team member. This product is wholly original and comprehensively demonstrates the creativity and capability of each member of the team. This is a product we are exceptionally proud of and now offer you the opportunity to explore **TheList.**
 
 ## Schema
+<img width="516" alt="Screen Shot 2022-08-04 at 11 35 03 AM" src="https://user-images.githubusercontent.com/92293363/182930333-bd756d4d-77c9-4fc9-aa56-8d3978f8fb5e.png">
 
 ## Setup
 1. Fork and Clone the repo: [Github - Consultancy-The-List-BE](https://github.com/CKjolhede/Consultancy_The_List_BE/edit/main/README.md)
@@ -30,24 +31,33 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 
  ### User Index (List of all users)
 *GET*   http://localhost:3000/api/v1/users
+![Screen Shot 2022-08-04 at 2 42 34 PM](https://user-images.githubusercontent.com/92293363/182948961-47992279-18b7-4a99-94c2-48c94dbf9470.png)
 <br>
+
  ### User Create (New User Creation)
 *POST* http://localhost:3000/api/v1/users
 <br>
+
  ### User Dashboard (Single User's Homepage)
 *GET* http://localhost:3000/api/v1/user/:id
+![Screen Shot 2022-08-04 at 2 44 45 PM](https://user-images.githubusercontent.com/92293363/182949226-65cccd6b-be1a-4a73-96a9-1f31401bcc82.png)
 <i>:id refers to the user's id</i>
 <br>
+
  ### Recommendations Index Endpoint (Specific User's Recommendations)
 *GET* http://localhost:3000/api/v1/users/:user_id/recommendations
+![Screen Shot 2022-08-04 at 2 49 34 PM](https://user-images.githubusercontent.com/92293363/182949931-f6db8e4e-b3d1-430d-9a7d-50a13da2b1ad.png)
 <br>
+
  ### Recommendations Create Endpoint (Creates a recommendation)
 *POST* http://localhost:3000/api/v1/users/:user_id/recommendations
 <br>
+
  ### Recommendations Update (Changes Status to Accepted)
 *PATCH* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
 <i>:id refers to the recommendation's id</i>
 <br>
+
  ### Recommendations Destroy (Recommendation rejected)
 *DEL* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
 <i>:id refers to the recommendation's id</i>
