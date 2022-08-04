@@ -13,7 +13,6 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 - [Contributors](##contributors)
 
 ## Overview
-
 **TheLIst BE** in conjunction with **TheList FE** is the product of a team of software development students. From its inception to its living production deployment, all aspects of this product can be directly traced back to a team member. This product is wholly original and comprehensively demonstrates the creativity and capability of each member of the team. This is a product we are exceptionally proud of and now offer you the opportunity to explore **TheList.**
 
 ## Schema
