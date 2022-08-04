@@ -25,3 +25,31 @@ The only thing limiting your rates is our bandwidth.  *Get it gurrl!*
 4. Run test suite locally with `bundle exec rspec`
 <br>
 **Google OAuth** is required to access and interact with **TheList**. Access to **TheListAPI** is restricted to only **TheList** and its users so authentication is implicit through access and authorization is managed by **TheList**
+
+## End Points
++ base `/api/v1`
+
+ ### User Index (List of all users)
+*GET*   http://localhost:3000/api/v1/users
+<br>
+ ### User Create (New User Creation)
+*POST* http://localhost:3000/api/v1/users
+<br>
+ ### User Dashboard (Single User's Homepage)
+*GET* http://localhost:3000/api/v1/user/:id
+<i>:id refers to the user's id</i>
+<br>
+ ### Recommendations Index Endpoint (Specific User's Recommendations)
+*GET* http://localhost:3000/api/v1/users/:user_id/recommendations
+<br>
+ ### Recommendations Create Endpoint (Creates a recommendation)
+*POST* http://localhost:3000/api/v1/users/:user_id/recommendations
+<br>
+ ### Recommendations Update (Changes Status to Accepted)
+*PATCH* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
+<i>:id refers to the recommendation's id</i>
+<br>
+ ### Recommendations Destroy (Recommendation rejected)
+*DEL* http://localhost:3000/api/v1/users/:user_id/recommendations/:id
+<i>:id refers to the recommendation's id</i>
+<br>
